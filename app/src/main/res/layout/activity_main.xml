@@ -1,0 +1,38 @@
+<!-- res/layout/activity_main.xml -->
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="View PDF"
+        android:textColor="#ffffff"
+        android:id="@+id/tv_header"
+        android:textSize="18sp"
+        android:gravity="center" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_below="@+id/tv_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfView"
+        android:layout_below="@+id/tv_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/btn_list_pdfs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List PDFs"
+        android:layout_below="@+id/pdfView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>
